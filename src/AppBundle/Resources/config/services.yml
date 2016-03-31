@@ -1,0 +1,8 @@
+services:
+    # Cryptography
+    core.crypto:
+        class: AppBundle\Security\Cryptography
+        arguments:
+            - %secret%
+            - rijndael-128
+            - cbc
