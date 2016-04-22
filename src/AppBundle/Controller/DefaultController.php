@@ -14,7 +14,10 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        VarDumper::dump($this->get('core.crypto'));
+        $this->get('core.user.manager')->create('Fulanito');
+        $list = $this->get('core.user.manager')->userList();
+
+        VarDumper::dump($list);
 
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', array(

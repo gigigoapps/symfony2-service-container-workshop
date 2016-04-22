@@ -1,4 +1,11 @@
 services:
+
+    core.user.manager:
+        class: AppBundle\Model\Manager\UserManager
+        arguments: ["AppBundle:User"]
+        tags:
+            - { name: entity.repository, argument: 0 }
+
     # Cryptography
     core.crypto:
         class: AppBundle\Security\Cryptography

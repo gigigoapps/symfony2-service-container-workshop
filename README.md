@@ -5,3 +5,6 @@ A workshop to introduce symfony 2 service container
 Create a simple service crypto to see how it works
  - Check debug
  - See appDevDebugProjectContainer.php file to see php generated
+
+# Branch using-tags
+Use tags to add functionality
